@@ -1,0 +1,22 @@
+.test-component {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: 
+      'main uno'
+      'main dos'
+}
+
+.test-main {
+  grid-area: main;
+}
+
+.test-secundary1 {
+  grid-area: uno;
+}
+
+.test-secundary2 {
+  grid-area: dos;
+}

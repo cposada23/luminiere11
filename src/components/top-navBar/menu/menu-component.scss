@@ -1,0 +1,46 @@
+@import '../../../css/config';
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,500;1,600&display=swap');
+
+#menu {
+  background-color: rgba($color: $primary-color, $alpha:1);
+  height: calc(15vh - 1.5rem);
+  width: 100%;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  #left-menu, #rigth-menu{
+    height: calc(15vh - 1.5rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #left-menu {
+    padding: 0rem 1rem 0rem 5rem;
+  }
+
+  #rigth-menu {
+    padding: 0rem 5rem 0rem 1rem;
+  }
+
+
+  #logo{
+    height: calc(15vh - 1.5rem);
+    img{
+      height: 100%;
+    }
+  }
+
+  .menu-item:hover{
+    color:$primary-ocre;
+    cursor:pointer;
+    transform: translate(0, 5px);
+  }
+
+}
